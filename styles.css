@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #fdd835;
+    padding: 20px;
+    color: white;
+}
+
+#gallery img {
+    width: 200px;
+    margin: 10px;
+}
+
+#about, #subscribe {
+    margin: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
