@@ -12,19 +12,34 @@
 
     <div class="button-container">
         <button class="discover-more" onclick="window.location.href='content.html'">Discover More</button>
+        <!-- Button to play audio -->
+        <button class="play-audio" onclick="playAudio()">Play Audio</button>
     </div>
 
     <div class="video-container">
-        <!-- Replace 'path_to_video.mp4' with the actual path to your AI-generated video -->
         <video autoplay muted loop>
             <source src="dog3.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
+    <!-- Hidden audio element -->
+    <audio id="myAudio">
+        <source src="path_to_audio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
     <footer class="site-footer">
         <p>&copy; Zach Anderson 2024 - AI Generated</p>
     </footer>
+
+    <script>
+        // JavaScript function to play audio
+        function playAudio() {
+            var audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
 </body>
 </html>
 
