@@ -1,27 +1,33 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #2c3e50; /* Dark blue background */
-    color: #ecf0f1; /* Light text for contrast */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     margin: 0;
     padding: 0;
     text-align: center; /* Center content */
 }
 
 .site-header {
-    background-color: #34495e; /* Slightly lighter dark shade for header */
-    color: #ecf0f1;
+    background-color: #333; /* Dark grey for header */
+    color: #fff; /* White text */
     padding: 20px 0;
 }
 
 .discover-more {
-    background-color: #000; /* Black background for button */
-    color: #fff; /* White text */
+    background-color: #fff; /* White background for button */
+    color: #000; /* Black text */
     padding: 15px 30px;
     font-size: 1.2em; /* Larger font size */
     border: none;
     cursor: pointer;
     margin-top: 20px;
     border-radius: 5px; /* Optional: rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.discover-more:hover {
+    background-color: #888; /* Lighter grey for hover */
+    color: #fff; /* White text on hover */
 }
 
 .video-container {
@@ -39,9 +45,8 @@ body {
 
 .site-footer {
     background-color: #333; /* Dark grey for footer */
-    color: #ecf0f1;
+    color: #fff; /* White text */
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
 }
-
