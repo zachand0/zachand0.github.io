@@ -11,10 +11,10 @@
     </header>
 
     <div class="button-container">
-        <button class="discover-more" onclick="window.location.href='content.html'">Discover More</button>
-        <button class="play-audio" onclick="playAudio()">Play Audio</button>
-        <!-- Button to open file upload -->
-        <button class="upload-photo" onclick="document.getElementById('fileInput').click()">Submit Your Dog's Photo</button>
+        <!-- All buttons now have a common class 'common-button' for consistent sizing -->
+        <button class="common-button" onclick="window.location.href='content.html'">Discover More</button>
+        <button class="common-button" onclick="playAudio()">Play Audio</button>
+        <button class="common-button" onclick="document.getElementById('fileInput').click()">Submit Your Dog's Photo</button>
         <input type="file" id="fileInput" style="display: none;" onchange="uploadFile()" accept="image/*">
     </div>
 
@@ -26,7 +26,7 @@
     </div>
 
     <audio id="myAudio">
-        <source src="dog4.mp3" type="audio/mp3">
+        <source src="path_to_audio.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
 
@@ -40,13 +40,12 @@
             audio.play();
         }
 
-        // Function to handle file upload, modify as needed
         function uploadFile() {
             var fileInput = document.getElementById('fileInput');
-            // You can handle the file upload here, such as sending it to a server
             alert("File selected: " + fileInput.files[0].name);
         }
     </script>
 </body>
 </html>
+
 
