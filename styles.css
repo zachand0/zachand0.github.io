@@ -1,69 +1,37 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e0e4e8; /* Soft gray reminiscent of cloudy skies */
-    color: #333;
+    background-color: #2c3e50; /* Dark background */
+    color: #ecf0f1; /* Light text for contrast */
     margin: 0;
     padding: 0;
 }
 
 .site-header {
-    background-color: #b0bec5; /* Lighter gray for the header */
-    color: #333;
+    background-color: #34495e; /* Slightly lighter dark shade for header */
+    color: #ecf0f1;
     padding: 20px 0;
     text-align: center;
 }
 
 .site-header h1 {
-    color: #455a64; /* Darker gray for title */
+    color: #ecf0f1;
     margin: 0;
 }
 
 .image-gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center images */
     padding: 20px;
 }
 
 .image-gallery img {
     margin: 10px;
-    width: 300px;
-    height: auto;
-    border-radius: 8px; /* Rounded corners for images */
+    width: 80%; /* Adjust width as needed */
+    max-width: 500px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners for images */
 }
 
 .about-section, .features-section, .subscribe-section {
-    background-color: #cfd8dc; /* Slightly darker gray for sections */
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.features-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.features-section li {
-    margin-bottom: 10px;
-}
-
-.subscribe-section form {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.subscribe-section input, .subscribe-section button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-}
-
-.site-footer {
-    background-color: #455a64; /* Dark gray for footer */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
+   
